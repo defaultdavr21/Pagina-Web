@@ -1,0 +1,31 @@
+@charset "UTF-8";
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9DA680;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .mensaje {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+            text-align: center;
+        }
+        .mensaje h2 {
+            color: green;
+        }
+        .mensaje a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .mensaje a:hover {
+            background-color: #0056b3;
+        }

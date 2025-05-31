@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+/* -----------------------------------
+   ESTILOS GENERALES
+------------------------------------ */
+body {
+    background-color: #F2F1E9;
+    font-family: Cinzel;
+    color: #435915;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* -----------------------------------
+   ENCABEZADO
+------------------------------------ */
+header, nav, section, aside, footer {
+    display: block;
+    border: 1.4px solid #435915;
+}
+
+h1 {
+    color: #435915;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 0px;
+    z-index: 1000;
+}
+
+h2.destacado {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 26px;
+}
+.encabezado {
+    display: flex;            /* Elementos en fila */
+    align-items: center;      /* ⬅️ Esto alinea verticalmente */
+    gap: 27px;
+}
+#favorito {
+    border: 1px solid #435915;
+    color: #435915;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+.logo {
+    width: 480px; 
+    height: auto;
+}
+.imagen-up {
+    width: 680px; 
+    height: auto;
+}
+
+/* -----------------------------------
+   NAVEGACIÓN
+------------------------------------ */
+nav {
+    background-color: #9DA680;
+    padding: 10px 5px;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    color: #435935;
+    text-align: center; 
+    padding: 12px;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-decoration: none;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+nav a:hover {
+    background-color: #F2F1E9;
+    border: 1px solid gray;
+    color: #435935;
+    transform: scale(1.2);
+}
+/* -----------------------------------
+   SECCIÓN Y ASIDE
+------------------------------------ */
+.agrupar {
+    display: block;
+    padding: 0;
+    width: 100%;
+}
+h3, p {
+    font-size: 23px; /* Ajusta el tamaño de la fuente para que sea igual */
+    line-height: 1.5; /* Añade un poco de espacio entre las líneas para mejorar la legibilidad */
+	text-align: justify;
+	margin: 0 10px;
+}	
+section,aside {
+	font-size: 23px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.imagenes {
+    display: block;
+    margin: 40px auto;
+    width: 50%;
+}
+.mapa {
+    display: block;
+    margin: 40px auto;
+    width: 50%;
+    height: 500px;
+}
+/* -----------------------------------
+   PIE DE PÁGINA - REDES SOCIALES
+------------------------------------ */
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+}
+.redes-sociales li img {
+    width: 100%;
+    height: 60px;
+    transition: transform 0.3s;
+}
+.redes-sociales li img:hover {
+    transform: scale(1.2);
+}
+body {
+    background-color: #f5f5e9;
+    color: #2f4f2f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    padding: 40px 20px;
+}
+
+.imagen-transicion {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.5s forwards ease-out;
+}
+
+/* Contenedor de las ventajas */
+.ventajas {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease-in;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ventajas h2 {
+    margin-bottom: 20px;
+    color: #264d26;
+}
+
+.ventajas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ventajas li {
+    font-size: 18px;
+    margin: 15px 0;
+    position: relative;
+    padding-left: 25px;
+}
+
+.ventajas li::before {
+    content: "🌱";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Botón estilizado */
+.boton-registro {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #76c043, #4b8e1f);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton-registro:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Animaciones */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*REGISTRO */
+.container {
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.form-image img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+
+.form-image.fade-in img {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(1.1); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.form-box {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+input[type="text"],
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.radios {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+/*--------Respuesta.jsp---------------------------------*/
+.respuesta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(to right, #e9eddc, #d7e0b3);
+    padding: 20px;
+}
+
+.respuesta-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.respuesta-card:hover {
+    transform: translateY(-5px);
+}
+
+.respuesta-card h2 {
+    text-align: center;
+    color: #6e8b3d;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.respuesta-card p {
+    margin: 10px 0;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #9DA680;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #7e885e;
+}
+/*-------------------CATEGORIA-----------------*/
+

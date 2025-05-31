@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body {
+    background-color: #E2E6CC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario-pago {
+    max-width: 500px;
+    margin: auto;
+    background-color: #9DA680;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.formulario-pago h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.formulario-pago input,
+.formulario-pago select {
+    width: 92%;
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.resumen-productos {
+    background-color: #dcdcdc;
+    padding: 12px 15px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+}
+
+.btn-pagar {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-pagar:hover {
+    background-color: #218838;
+}

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-color: #F2F1E9;
+    color: #435915;
+}
+
+.navbar {
+    background-color: #435915;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #ffffff !important;
+}
+
+.card {
+    background-color: #B2BA97;
+    border: 1px solid #388e3c;
+}
+
+.btn-success {
+    background-color: #435915;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #435915;
+}

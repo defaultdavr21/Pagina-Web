@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* -----------------------------------
+   Estilo para la página de Productos
+------------------------------------ */
+
+/* Asegura que el body ocupe toda la altura de la ventana */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5e9; /* Fondo suave */
+}
+
+/* Contenedor principal de productos */
+div {
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #F2F1E9; /* Fondo blanco para destacar */
+    border-radius: 10px;       /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+}
+
+/* Título de la página de productos */
+h1.titulo {
+    font-size: 32px;
+    color: #435915;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las tablas de productos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #435915;
+}
+
+th {
+    background-color: #435915;
+    color: white;
+}
+
+td {
+    background-color: #F2F1E9;
+}
+
+td, th {
+    font-size: 16px;
+}
+
+/* Para los enlaces dentro de la tabla */
+a {
+    color: #435915;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* -----------------------------------
+   PIE DE PÁGINA - REDES SOCIALES
+------------------------------------ */
+footer {
+    margin-top: auto;  /* Asegura que el footer siempre quede en la parte inferior */
+    padding: 20px;
+    background-color: #435915;
+    color: white;
+}
+
+.redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.redes-sociales li {
+    display: inline-block;
+}
+
+.redes-sociales li img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.redes-sociales li img:hover {
+    transform: scale(1.2);
+}
